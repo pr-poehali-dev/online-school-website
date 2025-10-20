@@ -146,13 +146,13 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <header className="sticky top-0 z-50 bg-slate-900 text-white border-b border-slate-800">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-yellow-50">
+      <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-900 via-fuchsia-800 to-purple-900 text-white border-b-4 border-yellow-400 shadow-lg sparkle">
         <nav className="container mx-auto px-4 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Icon name="GraduationCap" className="text-primary" size={32} />
-              <span className="text-2xl font-bold">EduSpace</span>
+              <Icon name="GraduationCap" className="text-yellow-400" size={32} />
+              <span className="text-2xl font-bold text-shimmer">EduSpace</span>
             </div>
             
             <div className="hidden md:flex items-center gap-8">
@@ -176,68 +176,68 @@ export default function Index() {
               </button>
             </div>
 
-            <Button variant="secondary" className="bg-accent hover:bg-accent/90 text-slate-900">Войти в кабинет</Button>
+            <Button className="gradient-gold text-purple-900 font-bold hover:shadow-xl hover:scale-105 transition-all sparkle">Войти в кабинет</Button>
           </div>
         </nav>
       </header>
 
       <main>
-        <section id="home" className="py-20 md:py-32 bg-gradient-to-b from-slate-50 to-white">
+        <section id="home" className="py-20 md:py-32 bg-gradient-to-br from-purple-100 via-fuchsia-50 to-yellow-100 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-900">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Профессиональное образование для карьерного роста
               </h1>
-              <p className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto">
+              <p className="text-xl md:text-2xl text-purple-900 mb-10 max-w-2xl mx-auto font-medium">
                 Углубленные программы обучения от ведущих экспертов индустрии. Серьезный подход к развитию навыков.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-lg px-8 bg-slate-900 hover:bg-slate-800" onClick={() => scrollToSection('courses')}>
+                <Button size="lg" className="text-lg px-8 gradient-purple text-white hover:shadow-2xl hover:scale-105 transition-all sparkle" onClick={() => scrollToSection('courses')}>
                   Каталог программ
                   <Icon name="ArrowRight" className="ml-2" size={20} />
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white">
+                <Button size="lg" className="text-lg px-8 bg-white border-4 border-yellow-400 text-purple-900 font-bold hover:bg-yellow-50 hover:shadow-xl transition-all">
                   Консультация
                 </Button>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-                <div className="animate-scale-in border-l-4 border-accent pl-6">
-                  <div className="text-5xl font-bold text-slate-900 mb-2">2,000+</div>
-                  <div className="text-slate-600 font-medium">Выпускников</div>
+                <div className="animate-scale-in border-l-4 border-yellow-400 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg sparkle">
+                  <div className="text-5xl font-bold text-shimmer mb-2">2,000+</div>
+                  <div className="text-purple-900 font-semibold">Выпускников</div>
                 </div>
-                <div className="animate-scale-in border-l-4 border-accent pl-6" style={{ animationDelay: '0.1s' }}>
-                  <div className="text-5xl font-bold text-slate-900 mb-2">15+</div>
-                  <div className="text-slate-600 font-medium">Лет на рынке</div>
+                <div className="animate-scale-in border-l-4 border-fuchsia-400 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg sparkle" style={{ animationDelay: '0.1s' }}>
+                  <div className="text-5xl font-bold text-shimmer mb-2">15+</div>
+                  <div className="text-purple-900 font-semibold">Лет на рынке</div>
                 </div>
-                <div className="animate-scale-in border-l-4 border-accent pl-6" style={{ animationDelay: '0.2s' }}>
-                  <div className="text-5xl font-bold text-slate-900 mb-2">98%</div>
-                  <div className="text-slate-600 font-medium">Трудоустройство</div>
+                <div className="animate-scale-in border-l-4 border-yellow-400 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg sparkle" style={{ animationDelay: '0.2s' }}>
+                  <div className="text-5xl font-bold text-shimmer mb-2">98%</div>
+                  <div className="text-purple-900 font-semibold">Трудоустройство</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="courses" className="py-20 bg-slate-50">
+        <section id="courses" className="py-20 bg-gradient-to-br from-fuchsia-50 via-purple-50 to-yellow-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Образовательные программы</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Образовательные программы</h2>
+              <p className="text-xl text-purple-800 max-w-2xl mx-auto font-medium">
                 Структурированные курсы с акцентом на практическое применение
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {courses.map((course, index) => (
-                <Card key={course.id} className="hover:shadow-xl transition-all border-slate-200 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="aspect-video bg-slate-900 rounded-t-lg overflow-hidden relative">
-                    <img src={course.image} alt={course.title} className="w-full h-full object-cover opacity-60" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
+                <Card key={course.id} className="hover:shadow-2xl transition-all border-2 border-yellow-300 animate-fade-in sparkle bg-white/90 backdrop-blur-sm" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div className="aspect-video bg-gradient-to-br from-purple-600 to-fuchsia-600 rounded-t-lg overflow-hidden relative">
+                    <img src={course.image} alt={course.title} className="w-full h-full object-cover opacity-50 mix-blend-overlay" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-purple-900 via-transparent to-transparent"></div>
                   </div>
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
-                      <Badge className="bg-accent text-slate-900 hover:bg-accent/90">{course.level}</Badge>
+                      <Badge className="gradient-gold text-purple-900 font-bold hover:shadow-lg">{course.level}</Badge>
                       <span className="text-sm text-muted-foreground flex items-center gap-1">
                         <Icon name="Users" size={14} />
                         {course.students}
@@ -254,8 +254,8 @@ export default function Index() {
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-slate-900">{course.price}</span>
-                      <Button className="bg-slate-900 hover:bg-slate-800">Подробнее</Button>
+                      <span className="text-2xl font-bold text-shimmer">{course.price}</span>
+                      <Button className="gradient-purple text-white hover:shadow-xl hover:scale-105 transition-all">Подробнее</Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -264,23 +264,23 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="teachers" className="py-20 bg-white">
+        <section id="teachers" className="py-20 bg-gradient-to-br from-purple-50 via-white to-fuchsia-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Преподавательский состав</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Преподавательский состав</h2>
+              <p className="text-xl text-purple-800 max-w-2xl mx-auto font-medium">
                 Профессионалы с подтвержденным опытом в крупнейших компаниях
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teachers.map((teacher, index) => (
-                <Card key={teacher.id} className="text-center hover:shadow-xl transition-all border-slate-200 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <Card key={teacher.id} className="text-center hover:shadow-2xl transition-all border-2 border-fuchsia-300 animate-fade-in sparkle bg-white/90" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader>
                     <div className="flex justify-center mb-4">
-                      <Avatar className="w-28 h-28 border-4 border-accent">
+                      <Avatar className="w-28 h-28 border-4 border-yellow-400 shadow-lg ring-4 ring-purple-200">
                         <AvatarImage src={teacher.avatar} alt={teacher.name} />
-                        <AvatarFallback className="text-2xl bg-slate-900 text-white">
+                        <AvatarFallback className="text-2xl gradient-purple text-white">
                           {teacher.name.split(' ').map(n => n[0]).join('')}
                         </AvatarFallback>
                       </Avatar>
@@ -289,10 +289,10 @@ export default function Index() {
                     <CardDescription className="text-base">{teacher.role}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600 mb-4 font-medium">{teacher.experience}</p>
+                    <p className="text-sm text-purple-800 mb-4 font-semibold">{teacher.experience}</p>
                     <div className="flex flex-wrap gap-2 justify-center">
                       {teacher.courses.map((course, idx) => (
-                        <Badge key={idx} className="bg-slate-100 text-slate-700 hover:bg-slate-200">{course}</Badge>
+                        <Badge key={idx} className="gradient-gold text-purple-900 font-semibold hover:shadow-lg">{course}</Badge>
                       ))}
                     </div>
                   </CardContent>
@@ -302,22 +302,22 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="reviews" className="py-20 bg-slate-50">
+        <section id="reviews" className="py-20 bg-gradient-to-br from-yellow-50 via-fuchsia-50 to-purple-100">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Отзывы выпускников</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Отзывы выпускников</h2>
+              <p className="text-xl text-purple-800 max-w-2xl mx-auto font-medium">
                 Реальные истории карьерного роста наших слушателей
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {reviews.map((review, index) => (
-                <Card key={review.id} className="animate-fade-in border-slate-200 hover:shadow-lg transition-shadow" style={{ animationDelay: `${index * 0.1}s` }}>
+                <Card key={review.id} className="animate-fade-in border-2 border-purple-300 hover:shadow-2xl transition-all sparkle bg-white/90" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader>
                     <div className="flex items-center gap-3 mb-3">
-                      <Avatar className="border-2 border-accent">
-                        <AvatarFallback className="bg-slate-900 text-white">
+                      <Avatar className="border-2 border-yellow-400 ring-2 ring-fuchsia-200">
+                        <AvatarFallback className="gradient-purple text-white">
                           {review.name.split(' ').map(n => n[0]).join('')}
                         </AvatarFallback>
                       </Avatar>
@@ -328,7 +328,7 @@ export default function Index() {
                     </div>
                     <div className="flex gap-1">
                       {[...Array(review.rating)].map((_, i) => (
-                        <Icon key={i} name="Star" className="text-accent fill-accent" size={16} />
+                        <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400 drop-shadow-lg" size={18} />
                       ))}
                     </div>
                   </CardHeader>
@@ -342,11 +342,11 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="faq" className="py-20 bg-white">
+        <section id="faq" className="py-20 bg-gradient-to-br from-purple-50 via-white to-yellow-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Часто задаваемые вопросы</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Часто задаваемые вопросы</h2>
+              <p className="text-xl text-purple-800 max-w-2xl mx-auto font-medium">
                 Информация об обучении и условиях поступления
               </p>
             </div>
@@ -354,11 +354,11 @@ export default function Index() {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="w-full">
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-slate-50 mb-3 px-6 rounded-lg border border-slate-200">
-                    <AccordionTrigger className="text-left font-semibold hover:no-underline text-slate-900">
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-gradient-to-r from-purple-50 to-fuchsia-50 mb-3 px-6 rounded-lg border-2 border-purple-200 sparkle">
+                    <AccordionTrigger className="text-left font-bold hover:no-underline text-purple-900">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-slate-600">
+                    <AccordionContent className="text-purple-800 font-medium">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -368,51 +368,51 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="contact" className="py-20 bg-slate-50">
+        <section id="contact" className="py-20 bg-gradient-to-br from-fuchsia-100 via-purple-50 to-yellow-100">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Контакты</h2>
-                <p className="text-xl text-slate-600">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">Контакты</h2>
+                <p className="text-xl text-purple-800 font-medium">
                   Свяжитесь с нами для получения консультации
                 </p>
               </div>
 
-              <Card className="border-slate-200">
+              <Card className="border-2 border-fuchsia-300 sparkle bg-white/90 backdrop-blur-sm shadow-2xl">
                 <CardContent className="pt-6">
                   <form className="space-y-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-semibold text-slate-900">Фамилия Имя Отчество</label>
-                      <Input placeholder="Иванов Иван Иванович" className="border-slate-300" />
+                      <label className="text-sm font-bold text-purple-900">Фамилия Имя Отчество</label>
+                      <Input placeholder="Иванов Иван Иванович" className="border-2 border-purple-300 focus:border-fuchsia-400" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-semibold text-slate-900">Корпоративная почта</label>
-                      <Input type="email" placeholder="ivanov@company.ru" className="border-slate-300" />
+                      <label className="text-sm font-bold text-purple-900">Корпоративная почта</label>
+                      <Input type="email" placeholder="ivanov@company.ru" className="border-2 border-purple-300 focus:border-fuchsia-400" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-semibold text-slate-900">Ваш запрос</label>
-                      <Textarea placeholder="Опишите ваши цели и интересующие программы" rows={5} className="border-slate-300" />
+                      <label className="text-sm font-bold text-purple-900">Ваш запрос</label>
+                      <Textarea placeholder="Опишите ваши цели и интересующие программы" rows={5} className="border-2 border-purple-300 focus:border-fuchsia-400" />
                     </div>
-                    <Button className="w-full bg-slate-900 hover:bg-slate-800" size="lg">
+                    <Button className="w-full gradient-purple text-white font-bold hover:shadow-2xl hover:scale-105 transition-all sparkle" size="lg">
                       Отправить заявку
                     </Button>
                   </form>
 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-10 border-t border-slate-200">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-10 border-t-2 border-purple-200">
                     <div className="flex flex-col items-center text-center">
-                      <Icon name="Mail" className="text-accent mb-3" size={24} />
-                      <div className="font-semibold mb-1 text-slate-900">Электронная почта</div>
-                      <div className="text-sm text-slate-600">info@eduspace.ru</div>
+                      <Icon name="Mail" className="text-yellow-500 mb-3" size={28} />
+                      <div className="font-bold mb-1 text-purple-900">Электронная почта</div>
+                      <div className="text-sm text-purple-700 font-medium">info@eduspace.ru</div>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                      <Icon name="Phone" className="text-accent mb-3" size={24} />
-                      <div className="font-semibold mb-1 text-slate-900">Телефон</div>
-                      <div className="text-sm text-slate-600">+7 (495) 123-45-67</div>
+                      <Icon name="Phone" className="text-fuchsia-500 mb-3" size={28} />
+                      <div className="font-bold mb-1 text-purple-900">Телефон</div>
+                      <div className="text-sm text-purple-700 font-medium">+7 (495) 123-45-67</div>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                      <Icon name="MapPin" className="text-accent mb-3" size={24} />
-                      <div className="font-semibold mb-1 text-slate-900">Адрес</div>
-                      <div className="text-sm text-slate-600">Москва, ул. Примерная, 1</div>
+                      <Icon name="MapPin" className="text-yellow-500 mb-3" size={28} />
+                      <div className="font-bold mb-1 text-purple-900">Адрес</div>
+                      <div className="text-sm text-purple-700 font-medium">Москва, ул. Примерная, 1</div>
                     </div>
                   </div>
                 </CardContent>
@@ -422,47 +422,47 @@ export default function Index() {
         </section>
       </main>
 
-      <footer className="bg-slate-950 text-white py-16 border-t-4 border-accent">
+      <footer className="bg-gradient-to-br from-purple-900 via-fuchsia-900 to-purple-900 text-white py-16 border-t-4 border-yellow-400 relative overflow-hidden sparkle">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="GraduationCap" size={28} />
-                <span className="text-xl font-bold">EduSpace</span>
+                <Icon name="GraduationCap" className="text-yellow-400" size={28} />
+                <span className="text-xl font-bold text-shimmer">EduSpace</span>
               </div>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-purple-200 leading-relaxed">
                 Лицензированный образовательный центр с государственной аккредитацией. Профессиональная подготовка специалистов с 2009 года.
               </p>
             </div>
             <div>
-              <h3 className="font-bold mb-4 text-white">Направления</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-accent transition-colors">Разработка ПО</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Проектирование</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Data Science</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Управление проектами</a></li>
+              <h3 className="font-bold mb-4 text-yellow-400">Направления</h3>
+              <ul className="space-y-2 text-sm text-purple-200">
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Разработка ПО</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Проектирование</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Data Science</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Управление проектами</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 text-white">Информация</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-accent transition-colors">О центре</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Лицензии</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Преподаватели</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Корпоративное обучение</a></li>
+              <h3 className="font-bold mb-4 text-yellow-400">Информация</h3>
+              <ul className="space-y-2 text-sm text-purple-200">
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">О центре</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Лицензии</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Преподаватели</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Корпоративное обучение</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 text-white">Документы</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-accent transition-colors">Договор оферты</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Политика обработки данных</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Правила обучения</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Реквизиты</a></li>
+              <h3 className="font-bold mb-4 text-yellow-400">Документы</h3>
+              <ul className="space-y-2 text-sm text-purple-200">
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Договор оферты</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Политика обработки данных</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Правила обучения</a></li>
+                <li><a href="#" className="hover:text-yellow-300 transition-colors">Реквизиты</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+          <div className="border-t-2 border-yellow-400 pt-8 text-center text-sm text-purple-200 font-medium">
             © 2024 ООО "EduSpace". Образовательная лицензия №123456. Все права защищены.
           </div>
         </div>

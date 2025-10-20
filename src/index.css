@@ -7,25 +7,25 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 280 50% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 280 50% 10%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222 47% 11%;
+    --primary: 280 100% 70%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 11% 15%;
+    --secondary: 291 64% 42%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 280 40% 95%;
+    --muted-foreground: 280 10% 45%;
 
-    --accent: 27 87% 67%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 280 100% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -110,5 +110,95 @@
   h6 {
     font-family: "Merriweather", serif;
     font-weight: 700;
+    background: linear-gradient(135deg, #d946ef 0%, #facc15 50%, #d946ef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+  }
+}
+
+@layer utilities {
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .sparkle {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sparkle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 215, 0, 0.4) 50%,
+      transparent 100%
+    );
+    animation: sparkle-slide 3s infinite;
+  }
+
+  @keyframes sparkle-slide {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  }
+
+  .gradient-purple {
+    background: linear-gradient(135deg, #d946ef 0%, #a855f7 50%, #d946ef 100%);
+  }
+
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      #d946ef 0%,
+      #facc15 25%,
+      #d946ef 50%,
+      #facc15 75%,
+      #d946ef 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer-text 4s linear infinite;
+  }
+
+  @keyframes shimmer-text {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
   }
 }
